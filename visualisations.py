@@ -13,7 +13,7 @@ def visualise_region(df):
 def visualise_gender(df):
     fig_gender = px.histogram(df, x="Gender", title="Gender Distribution of Respondents")
     fig_gender.show()
-# Complete the function name below
+
 visualise_age(df)
 visualise_education(df)
 visualise_region(df)

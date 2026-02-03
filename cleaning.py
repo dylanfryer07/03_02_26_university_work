@@ -4,3 +4,6 @@ print(df.count()/len(df)*100)
 
 ## Dropping column "4b1. And are you satisfied with what you have?" as on 15% of data is there
 df = df.drop(columns='4b1. And are you satisfied with what you have?')
+
+## Dropping rows with more than 4 missing values
+data_cleaned = df.dropna(thresh=df.shape[1] - 4)
